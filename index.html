@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magia Negra - Maetonetti</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        form {
+            background-color: rgba(255, 0, 0, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+        input, select, button {
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 16px;
+        }
+        button {
+            background-color: red;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: darkred;
+        }
+        img {
+            width: 80%;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bem-vindo ao Mundo da Magia Negra</h1>
+        <p>Preencha seus dados para saber mais sobre nossos trabalhos</p>
+        <form action="#" method="POST">
+            <input type="text" name="nome_completo" placeholder="Nome Completo" required>
+            <input type="date" name="data_nascimento" placeholder="Data de Nascimento" required>
+            <input type="tel" name="telefone" placeholder="Telefone" required>
+            <select name="escolha" required>
+                <option value="trabalho_individual">Deseja um trabalho individual</option>
+                <option value="trabalho_gratis">Desejo apenas o trabalho grátis</option>
+            </select>
+            <button type="submit">Enviar</button>
+        </form>
+
+        <h2>Trabalho de Adoçamento Gratuito</h2>
+        <video width="320" height="240" controls>
+            <source src="video.mp4" type="video/mp4">
+            Seu navegador não suporta a reprodução de vídeo.
+        </video>
+
+        <h2>Galeria de Magia Negra</h2>
+        <img src="imagem1.jpg" alt="Imagem de Magia Negra">
+        <img src="ritual.jpg" alt="Ritual Místico">
+
+        <p>Escute nossa música mística:</p>
+        <audio controls autoplay loop>
+            <source src="musica.mp3" type="audio/mpeg">
+            Seu navegador não suporta áudio.
+        </audio>
+    </div>
+</body>
+</html>
